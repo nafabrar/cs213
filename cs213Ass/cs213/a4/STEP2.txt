@@ -1,0 +1,8 @@
+PART 1
+Step 2:
+
+1.
+The bug was in the tree_ordered_suffix_print procedure ( when it is called in main).
+The procedure tries to print elements e in the tree that has already been
+deleted/freed in the list.c file procedures.  This results in dangling pointer
+bug which was fixed through implementation of reference counts.

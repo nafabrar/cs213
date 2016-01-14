@@ -1,0 +1,5 @@
+Step1) 
+- The bug (dangling pointer) occurs when procedure pop() is called
+- what is returned by pop() (e->name) is memory that has freed
+- assignment of a pointer char* to what is returned results in this pointer
+becoming a dangling pointer (points to what has already freed)ma
